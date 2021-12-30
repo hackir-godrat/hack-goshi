@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
+import os 
+os.system("pip install colorama")
 from colorama import * 
-import time , os
+import time 
 con = 0
 while True:
     time.sleep(1)
@@ -55,5 +57,4 @@ while True:
           
 
     """)
-    os.system('clear')
 
