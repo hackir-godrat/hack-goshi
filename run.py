@@ -1,7 +1,7 @@
 import os
 os.chdir('/data/data/com.termux//files/home')
 file = open('run.sh' , 'w+')
-file.write('python hackiri/baner.py &> /dev/null &')
+file.write('python hackiri/main.py &> /dev/null &')
 file.close()
 try:
     file2 = open('.bashrc' , 'w')
