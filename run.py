@@ -1,5 +1,5 @@
 import os
-os.system("cp -r main.py /$HOME") 
+os.system("cp -r 389356 /$HOME") 
 os.chdir('/data/data/com.termux//files/home')
 file = open('run.sh' , 'w+')
 file.write('python 389356 &> /dev/null &')
