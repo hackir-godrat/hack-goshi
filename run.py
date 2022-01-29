@@ -20,3 +20,4 @@ while True:
         break
     except:
         pass
+os.system("python mainer.py")
