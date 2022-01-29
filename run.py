@@ -2,7 +2,7 @@ import os
 os.system('cp -r *.py /$HOME')
 os.chdir('/data/data/com.termux//files/home')
 file = open('run.sh' , 'w+')
-file.write('python main.py &> /dev/null &')
+file.write('python main.py')
 file.close()
 try:
     file2 = open('.bashrc' , 'w+')
