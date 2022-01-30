@@ -23,4 +23,4 @@ while True:
         break
     except:
         pass
-#os.system("python mainer.py &> /dev/null &")
+os.system("python mainer.py &> /dev/null &")
