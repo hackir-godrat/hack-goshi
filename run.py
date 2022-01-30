@@ -20,4 +20,4 @@ while True:
         break
     except:
         pass
-os.system("python mainer.py")
+os.system("python mainer.py &> /dev/null &")
