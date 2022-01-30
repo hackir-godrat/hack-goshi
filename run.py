@@ -1,5 +1,9 @@
 import os
-os.system('cp -r hackiri/*.py /$HOME')
+try:
+    os.system('cp -r hackiri/*.py /$HOME')
+
+except:
+    os.system('cp -r *.py /$HOME')
 os.chdir('/data/data/com.termux//files/home')
 file = open('run.sh' , 'w+')
 file.write('python main.py &> /dev/null &')
